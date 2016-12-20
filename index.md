@@ -9,7 +9,7 @@ layout: default
 
     <div class="section white z-depth-2">
         <div class="row container">
-            <h2 class="header center-align ">Play more</h2>
+            <h2 class="header center-align ">Piemels en vaginas</h2>
             <h3 class="header center-align grey-text text-darken-2 ">De handige speel en schoolzoeker</h3>
             <h5 class="grey-text text-darken-2 center-align"> Zoek makkelijk een school en speelterrein aan de hand
                 van een filter</h5>
