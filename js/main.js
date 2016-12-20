@@ -1,42 +1,12 @@
 $(document).ready(function () {
     $(".button-collapse").sideNav();
-
 });
 
-// naam en pas register
-var regiName = document.getElementById('regname');
-var regiPw = document.getElementById('regpw');
-
-function store() {
-    localStorage.setItem('uName', regiName.value);
-    localStorage.setItem('pw', regiPw.value);
-    window.location.href = "login.html"
-}
-
-function check() {
-
-
-    var storedName = localStorage.getItem('uName');
-    var storedPw = localStorage.getItem('pw');
-
-
-    var userName = document.getElementById('logname');
-    var userPw = document.getElementById('logpw');
-
-
-    if (userName.value == storedName && userPw.value == storedPw) {
-        alert('You are loged in.');
-    } else {
-        alert('Gebruiker of wachtwoord wordt niet herkend.' + userName);
-    }
-}
-
-$(document).ready(function () {
+/*$(document).ready(function () {
     $('.parallax').parallax();
-});
+});*/
 
 var prevMarkers = [], newMarkers = [];
-
 
 /*Scholen************************************************************************************************/
 function ready(cb) {
@@ -44,7 +14,6 @@ function ready(cb) {
         ? setTimeout(ready.bind(null, cb), 90)
         : cb();
 }
-
 
 ready(function () {
 
@@ -204,8 +173,6 @@ ready(function () {
                     document.getElementById("aantal_scholen").innerHTML = aantalScholen;
 
                     /*console.log(school.Point.coordinates);*/
-
-
                     /*Googlemaps*/
                     var latLng = new google.maps.LatLng(school.Point.coordinates.split(',')[1],school.Point.coordinates.split(',')[0]);
                     var contentString ='<div id="mapContent">' +  '<p id="title_map">' + title + '</p>' + '<p>' + adres + '</div>';
@@ -246,17 +213,13 @@ ready(function () {
 
 
 /*Paralax**************************************************************************************/
-
 $(document).ready(function () {
     $('.parallax').parallax();
 });
 
-
-
 /*Speelterein**************************************************************************************/
 
 ready(function () {
-
     var App = {
         "init": function () {
             this.URLSPEEL = '/data/speelterrein.json'; // Cache the url with random users in variable URLRANDOMUSERME
@@ -357,7 +320,6 @@ function initMap() {
         center: new google.maps.LatLng(51.0546539,3.7235797),
         mapTypeId: 'terrain'
     });
-
 }
 
 /******************************************************Like Button**********************************/
