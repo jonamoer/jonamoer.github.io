@@ -32,7 +32,7 @@ layout: default
 
             <h3 class="header center-align grey-text text-darken-2 ">Updates</h3>
             <h5 class="grey-text text-darken-2 center-align">
-                Als er nieuwe scholen zijn bij gekomen vind u dit hier. Alsook de speelterreinen.
+                Als er nieuwe scholen zijn bijgekomen vindt u dit hier, alsook de speelterreinen.
             </h5>
 
             <div class="center-align"><a class="waves-effect waves-light btn">Updates</a></div>
